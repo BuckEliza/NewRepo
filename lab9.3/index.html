@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS</title>
+</head>
+<!--Данная страница не завершена-->
+<body>
+	<div>Лабораторная работа №9: Консоль браузера, console.log и document.write в JavaScript.</div><br>
+	
+	<h2>Проверяем консоль JavaScript</h2>
+</body>
+</html>
+<script>
+	alert("Загрузка прошла успешно");
+	
+	let admin = confirm("Являетесь ли Вы админом данной системы?");
+	
+	if (admin == true) {
+		document.write('<a href="index.php">Панель админа.</a>');
+	} else {
+		console.log("Что-то пошло не так. Возможно данный пользователь не является администратором системы");
+		document.write("Что-то пошло не так. Возможно данный пользователь не является администратором системы");
+	}
+</script>
